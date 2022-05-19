@@ -1,10 +1,24 @@
-import Header from "./components/Header"
-const App=()=>{
+import './App.css';
+
+import logo from './logo.svg';
+
+function App() {
   return (
     <div className="App">
-      <Header />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Welcome to React tutorial</h1>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
