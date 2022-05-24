@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+/*import React, {useEffect, useState} from 'react'
 
 const Joke = () => {
     const initialJoke =
@@ -8,7 +8,7 @@ const Joke = () => {
 
   const [joke, setJoke] = useState('');
 
-  /*useEffect( ()=>{
+  useEffect( ()=>{
     axios
     .get('https://icanhazdadjoke.com/', {headers: {Accept:'application/json'}})
     .then(res=>setJoke(res.data))
@@ -20,7 +20,7 @@ const Joke = () => {
     .get('https://icanhazdadjoke.com/', {headers: {Accept:'application/json'}})
     .then(res=>setJoke(res.data))
     .catch(err=>console.log(err))
-  }*/
+  }
   
 
   return (
@@ -36,4 +36,4 @@ const Joke = () => {
   )
 }
 
-export default Joke
+export default Joke*/
