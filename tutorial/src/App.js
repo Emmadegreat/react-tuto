@@ -1,21 +1,17 @@
-import React from 'react';
+import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
+
 import Header from './components/pages/Header';
-import Footer from './components/pages/Footer';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Contact from './components/pages/Contact';
-import Error from './components/pages/Error';
+import Navbar from './components/layers/Menu';
+import React from 'react';
 
 function App() {
   
   return (
+    <div className="App">
       
-      <div className="App">
-        <Header />
-        <Footer />
-      </div>
-    
+        <Navbar />
+        
+    </div>
   );
 }
 

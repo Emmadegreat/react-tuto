@@ -7,13 +7,17 @@ import Error from './Error';
 
 
 const Header=()=>{
+
+  const linkStyle={
+    color:'#fff'
+  }
   return (
     <Router>
       <header>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+        <ul className="nav-links">
+          <li><Link to="/" style={linkStyle}>Home</Link></li>
+          <li><Link to="about" style={linkStyle}>About</Link></li>
+          <li><Link to="/contact" style={linkStyle}>Contact</Link></li>
           </ul>
         </header>
         <Routes>

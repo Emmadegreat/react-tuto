@@ -13,27 +13,39 @@ code {
     monospace;
 }
 
-header{
-  background:#000;
+/*header{
+  background:dodgerblue;
  color: cornsilk;
  height:60px;
  padding: 0rem 2rem;
 }
 header ul{
   list-style-type:none;
-  display: inline;
+  display: flex;
   text-align: center;
   line-height: 3;
+  justify-content:space-between;
+  width: 30%;
+  border: 2px solid red;
+  padding-right: 2rem;
 }
 header ul li{
   list-style-type:none;
-  display: inline;
+  display: flex;
   text-align: center;
+  justify-content:space-around;
+  float:right;
 }
 header ul li a{
   list-style-type:none;
-  display: inline;
+  display: flex;
   text-decoration: none;
-  margin-left: 3rem;
-  color:#fff;
+  font-size: large;
+  justify-content:space-around;
+  float:rit;
+  padding-right: rem;
 }
+h1{
+  color:midnightblue;
+}*/
+
