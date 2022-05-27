@@ -1,0 +1,8 @@
+.bg-myRed{
+    background: darkslategray;
+    border-bottom:0.1rem solid crimson;
+    color:floralwhite;
+}
+body{
+    background: darkslategray;
+}
