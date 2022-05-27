@@ -1,23 +1,50 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './bootstrap.css'
 
-import { Navbar } from 'react-bootstrap';
+import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+
+import Home from './Home';
 import React from 'react'
 import { ReactDOM } from 'react-dom';
 
-function App_1() {
+function App() {
   return (
-      <div className="app_1">
-          <Navbar bg="myRed" variant="dark">
-            <h2>hellow</h2>
-              <Navbar.Brand>
-                  <img src="../images/logo.PNG" alt="" srcset="" />
-              </Navbar.Brand>
+    <Router className="app_1">
+      <Navbar bg="myRed" variant="dark" fixed="top" expand="sm" collapseOnSelect>
+        <Navbar.Brand>
+          <img src={"../logo.PNG"} alt="" srcset="" />
+        </Navbar.Brand>
 
-          </Navbar>
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+
+          <Nav>
+            <Nav.Link href="/Home">Home</Nav.Link>
+            <Nav.Link href="./About">About Us</Nav.Link>
+            <Nav.Link href="./Contact">Contact</Nav.Link>
+            <Nav.Link href="./Service">Services</Nav.Link>
+            <Nav.Link href="./Blog">Blog</Nav.Link>
+            <NavDropdown title="product">
+              <NavDropdown.Item href=".#products/electronics">electronics</NavDropdown.Item>
+              <NavDropdown.Item href="./">Phones</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="./">office equipment</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    <section className="content">
+      <Routes>
+       
+          <Route path="/Home" element={<Home />}/>
+         
+      </Routes>
+    </section>
       
-    </div>
+      
+    </Router>
   )
 }
 
-export default App_1
+export default App

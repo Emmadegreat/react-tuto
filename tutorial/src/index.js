@@ -12,13 +12,13 @@ ReactDOM.render(
   document.getElementById('root')
 );*/
 
-import App_1 from './components/Bootstrap/App'
+import App from './components/Bootstrap/App'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
 ReactDOM.render(
     <React.StrictMode>
-        <App_1 />
+        <App />
     </React.StrictMode>,
-    document.getElementById('rot')
+    document.getElementById('root')
 );

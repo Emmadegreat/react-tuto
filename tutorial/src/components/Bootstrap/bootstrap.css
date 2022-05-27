@@ -1,8 +1,23 @@
 .bg-myRed{
-    background: darkslategray;
-    border-bottom:0.1rem solid crimson;
-    color:floralwhite;
+    background: midnightbue;
+    border-bottom:0.2rem solid #ff8c00;
+    color:#fff;
+    padding: 0.5rem 2rem;
 }
 body{
-    background: darkslategray;
+    background: #b5fac7;
+}
+.ccontent{
+    padding: 10rem 5rem;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Link{
+    color: #fff;
+    font-size: 5rem;
+}
+
+.Hom{
+    padding-top: 5rem;
 }
