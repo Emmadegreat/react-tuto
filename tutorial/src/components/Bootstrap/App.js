@@ -4,6 +4,8 @@ import './bootstrap.css'
 import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
+import About from './About'
+import Error from './Error'
 import Home from './Home';
 import React from 'react'
 import { ReactDOM } from 'react-dom';
@@ -37,7 +39,9 @@ function App() {
     <section className="content">
       <Routes>
        
-          <Route path="/Home" element={<Home />}/>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="*" element={<Error />} />
          
       </Routes>
     </section>

@@ -1,5 +1,9 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .bg-myRed{
-    background: midnightbue;
+    background: midnightblue;
     border-bottom:0.2rem solid #ff8c00;
     color:#fff;
     padding: 0.5rem 2rem;
@@ -7,12 +11,12 @@
 body{
     background: #b5fac7;
 }
-.ccontent{
-    padding: 10rem 5rem;
+.content{
+    padding: 5rem 2rem;
+    font-size: 1.5srem;
 }
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
+
+
 .Link{
     color: #fff;
     font-size: 5rem;
