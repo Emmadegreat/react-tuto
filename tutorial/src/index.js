@@ -12,13 +12,14 @@ ReactDOM.render(
   document.getElementById('root')
 );*/
 
-import App from './components/Bootstrap/App'
-import React from 'react'
+//import App from './components/App'
+import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
+import Hooks from "./components/hooks";
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <Hooks />
     </React.StrictMode>,
     document.getElementById('root')
 );

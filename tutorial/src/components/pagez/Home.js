@@ -8,7 +8,7 @@ const Home = () => {
         <div className="card-body">this is a card in bootstrap</div>
         <div className="card-footer">card footer</div>
       </div>
-      <p>hellow home, I will come to see you over the</p>
+      <p>hellow home, I will come to see you over there, stay cool</p>
     </div>
   )
 }
