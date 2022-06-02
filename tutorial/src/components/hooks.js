@@ -38,7 +38,7 @@ const Hooks = () => {
       <>
         {submit && valid? <div className="success-message">success, you have been registered</div>:null}
         
-      <form className="register-form" onSubmit={handleSubmit}>         
+      <form className="ui-form" onSubmit={handleSubmit}>         
       <span>  </span> <br />
           <input
               type="email"
