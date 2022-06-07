@@ -1,4 +1,4 @@
-/*import App from './App';
+import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -10,7 +10,7 @@ ReactDOM.render(
       
   </React.StrictMode>,
   document.getElementById('root')
-);*/
+);/*
 
 //import App from './components/App'
 import React, {useState} from 'react'
@@ -22,4 +22,4 @@ ReactDOM.render(
         <Hooks />
     </React.StrictMode>,
     document.getElementById('root')
-);
+);*/
