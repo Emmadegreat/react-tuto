@@ -1,16 +1,17 @@
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 
-import Header from './components/pages/Header';
-import Navbar from './components/layers/Menu';
-import React from 'react';
-import Hook from './components/hooks'
 import Form from './Form';
+import Header from './components/Side__navbar/Header';
+import Hook from './components/hooks'
+import Navbar from './components/pages/Menu';
+import React from 'react';
+
 function App() {
   
   return (
     <div className="App_1">
       
-        <Form />
+        <Navbar />
         
     </div>
   );

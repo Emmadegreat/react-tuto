@@ -1,4 +1,4 @@
-import './navbar.css'
+import '../navbar.css'
 
 import {NavLink, Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import React, { useState } from 'react'

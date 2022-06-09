@@ -1,17 +1,17 @@
-import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import '../pagez/App.css'
-import { ReactDOM } from 'react-dom';
+import '../App.css'
 
 import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
-import About from '../pagez/About'
-import Blog from "../pagez/Blog";
-import Contact from "../pagez/Contact";
-import Error from '../pagez/Error'
-import Home from '../pagez/Home';
-import Service from "../pagez/Service";
+import About from '../pages/About'
+import Blog from "../pages/Blog";
+import Contact from "../pages/Contact";
+import Error from '../pages/Error'
+import Home from '../pages/Home';
+import React from 'react'
+import { ReactDOM } from 'react-dom';
+import Service from "../pages/Service";
 import logo from '../images/logo.PNG'
 
 const Header = () => {
