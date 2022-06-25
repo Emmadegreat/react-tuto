@@ -1,5 +1,6 @@
-import App from './components/Side__navbar/pages/Navbar'
-/*import App from './components/Navigation/App'*/
+/*import App from './components/Side__navbar/pages/Navbar'
+import App from './components/Navigation/App'*/
+import App from './components/calculator/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
 

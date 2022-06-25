@@ -2,21 +2,19 @@ import '../side__bar.css'
 
 import {Link, NavLink, Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import React, { useEffect, useState } from 'react'
-
-import { set } from 'react-hook-form';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import Home from './Home'
+
 import About from './About';
 import Contact from './Contact';
-
- 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Home from './Home'
+import { set } from 'react-hook-form';
 
 const Header=()=>{
   const [mobile, setMobile] = useState(false);
   const [sidebar, setSidebar] = useState(false);
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (window.innerWidth < 768) {
       setMobile(true);
       
@@ -37,6 +35,30 @@ const Header=()=>{
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+  }, []);*/
+
+  useEffect(() => {
+    if (window.innerWidth < 900) {
+      setMobile(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 900) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+        setSidebar(false)
+    
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+    
   }, []);
 
   const linkStyle={
@@ -47,9 +69,9 @@ const Header=()=>{
   return (
     <Router>
       <nav className="navbar">
-        <h1 className="navbar__logo"><a href="">LOGO</a></h1>
+        <h1 className="navbar__logo"><a href="#">LOGO</a></h1>
         
-        {!mobile && (
+        {!mobile &&(
           <ul className="nav__items">
             <li className="nav__link">
               <NavLink className="links" to="./Home">Home</NavLink>
@@ -62,11 +84,9 @@ const Header=()=>{
             </li>
             <li className="nav__link">
               <NavLink className="links" to="./Contact">Contact</NavLink>
-            </li>
-            
+            </li> 
           </ul>
         )}
-        
 
         {mobile && (
           <div className="sidebar-toggle">

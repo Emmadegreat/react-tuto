@@ -1,9 +1,12 @@
-import React from 'react'
+import '../navbar.css'
 
-const Home=()=> {
+const Home = () => {
+  
+  
+
   return (
     <div>
-      Home page 1
+      <h3>Home</h3>
     </div>
   )
 }
