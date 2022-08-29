@@ -7,8 +7,9 @@ import About from './About';
 import Blog from './Blog';
 import Contact from './Contact';
 import Home from './Home';
+import Services  from "./services";
 
-const Navbar = () => {
+const Menu = () => {
 
     const [click, setClick]= useState(false);
     const handleClick =()=>setClick(!click);
@@ -29,6 +30,10 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink to="about" activeClassName="active" className="Nav-link" onClick={handleClick}>About</NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink to="/services"  activeClassName="active" className="Nav-link" onClick={handleClick}>Services</NavLink>
+              
+            </li>
           </ul> 
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
@@ -40,11 +45,12 @@ const Navbar = () => {
           <Route path="/" element={<Home />}/>
           <Route path="/blog" element={<Blog />}/>
           <Route path="/contact" element={<Contact />}/>
-          <Route path="/about" element={<About />}/>
+          <Route path="/about" element={<About />} />
+          <Route path='/services' element={<Services />}/>
         </Routes>
       </div>
     </Router>
   )
 }
 
-export default Navbar
+export default Menu
